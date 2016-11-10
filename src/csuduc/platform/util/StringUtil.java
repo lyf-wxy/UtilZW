@@ -7,6 +7,7 @@
  */
 package csuduc.platform.util;
 
+import java.sql.Timestamp;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -94,6 +95,19 @@ public class StringUtil {
 		}
 		
 	}
+	public synchronized static Timestamp strToTimeStamp(String str,String format){
+		try  
+		{  
+		    return new Timestamp(strToDate(str, format).getTime());
+		}  
+		catch (Exception e)  
+		{  
+		    e.printStackTrace();
+		    return null;
+		}
+		
+	}
+	
 	
 	/**
 	 * <p>
