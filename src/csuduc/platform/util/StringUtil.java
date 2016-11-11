@@ -130,11 +130,17 @@ public class StringUtil {
 //		testSplit(str3,'|','&');
 //		testSplit(str4, '_', '&');
 		
-		String strDate1 = "20160513091839";
-		String strDate2 = "20160513091840";
-		Date date1 = strToDate(strDate1, "yyyyMMddHHmmss");
-		Date date2 = strToDate(strDate2, "yyyyMMddHHmmss");
-		System.out.println(date1.getTime() - date2.getTime());
+		String str5 ="0_4_5_2_1-0_4_2_1";
+		List<String> list = split(str5, '-');
+		for (String item : list) {
+			System.out.println(item);
+		}
+		
+//		String strDate1 = "20160513091839";
+//		String strDate2 = "20160513091840";
+//		Date date1 = strToDate(strDate1, "yyyyMMddHHmmss");
+//		Date date2 = strToDate(strDate2, "yyyyMMddHHmmss");
+//		System.out.println(date1.getTime() - date2.getTime());
 	}
 
 }
