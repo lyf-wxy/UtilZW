@@ -16,5 +16,6 @@
 	<classpathentry kind="lib" path="refLib/commons-net-3.3.jar"/>
 	<classpathentry kind="lib" path="refLib/mail-1.4.7.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="refLib/commons-pool-1.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
