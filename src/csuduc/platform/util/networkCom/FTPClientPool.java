@@ -14,13 +14,11 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.net.ftp.FTPClient;
-import org.apache.commons.pool.ObjectPool;
-import org.apache.commons.pool.PoolableObjectFactory;
 /**
 * 实现了一个FTPClient连接池
 * @author heaven
 */
-public class FTPClientPool implements ObjectPool<FTPClient>{
+public class FTPClientPool{
  private static final int DEFAULT_POOL_SIZE = 10;
  private final BlockingQueue<FTPClient> pool;
  private final FTPClientFactory factory;
@@ -32,7 +30,7 @@ public class FTPClientPool implements ObjectPool<FTPClient>{
  */
  public FTPClientPool(FTPClientFactory factory) throws Exception{
       this(DEFAULT_POOL_SIZE, factory);
-      System.out.println("初始化连接池");
+      System.out.println("初始化FTP连接池");
  }
  /**
  *
@@ -126,7 +124,5 @@ public class FTPClientPool implements ObjectPool<FTPClient>{
       }
  }
 
- public void setFactory(PoolableObjectFactory<FTPClient> factory) throws IllegalStateException, UnsupportedOperationException {
 
- }
 }

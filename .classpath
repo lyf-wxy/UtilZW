@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="refLib/bcprov-ext-jdk15on-153.jar"/>
 	<classpathentry kind="lib" path="refLib/bcprov-jdk15on-153.jar"/>
 	<classpathentry kind="lib" path="refLib/junit-4.11.jar"/>
@@ -13,9 +12,16 @@
 	<classpathentry kind="lib" path="refLib/httpclient-4.5.1.jar"/>
 	<classpathentry kind="lib" path="refLib/httpcore-4.4.3.jar"/>
 	<classpathentry kind="lib" path="refLib/commons-codec-1.9.jar"/>
-	<classpathentry kind="lib" path="refLib/commons-net-3.3.jar"/>
 	<classpathentry kind="lib" path="refLib/mail-1.4.7.jar"/>
+	<classpathentry kind="lib" path="refLib/commons-net-3.3.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="refLib/commons-pool-1.6.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="accessible" pattern="**"/>
+		</accessrules>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -327,16 +327,16 @@ public class FtpUtils {
 		
 		//！！！！connection reset 异常，则需要检查客户端和服务器端关闭防火墙
 		
-//		res = ftpClient.downloadFile( "192.168.0.70",21,
-//		"anonymous", "anonymous",
-//				"/", "plugin_hj.jar",
-//				"D:/ftplocal", "plugin_hj.jar");
-//		
-//		if (res) {
-//			System.out.println("下载成功！！");
-//		}else{
-//			System.out.println("下载失败！！");
-//		}
+		res = ftpClient.downloadFile( "192.168.0.70",21,
+		"anonymous", "anonymous",
+				"/", "plugin_hj.jar",
+				"D:/ftplocal", "plugin_hj.jar");
+		
+		if (res) {
+			System.out.println("下载成功！！");
+		}else{
+			System.out.println("下载失败！！");
+		}
 		ftpClient
 				.uploadfile("192.168.0.70", 21, "anonymous", "anonymous",
 						"/localUser","plugin_SYY.jar","D:/ftplocal", "plugin_SYY.jar");

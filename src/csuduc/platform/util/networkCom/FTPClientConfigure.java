@@ -7,6 +7,8 @@
  */
 package csuduc.platform.util.networkCom;
 
+import org.apache.commons.net.ftp.FTPClient;
+
 /**
  * FTPClient配置类，封装了FTPClient的相关配置
  *
@@ -20,10 +22,11 @@ public class FTPClientConfigure {
   private String passiveMode;
   private String encoding;
   private int clientTimeout;
-  private int threadNum;
-  private int transferFileType;
+  private int threadNum = 3;
+  private int transferFileType = FTPClient.BINARY_FILE_TYPE;
   private boolean renameUploaded;
-  private int retryTimes;
+  private int retryTimes = 2;
+  public int bufferSize = 1024;
 
   public String getHost() {
          return host;
